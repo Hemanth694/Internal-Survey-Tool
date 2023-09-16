@@ -1,3 +1,3 @@
 # Internal Survey Tool
 
-To handle and manage all the employee surveys within an organization.
+To handle and manage all employee surveys within an organization.
