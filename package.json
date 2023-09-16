@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@cloudscape-design/components": "^3.0.388"
-  },
-  "devDependencies": {
-    "typescript": "^5.2.2"
-  }
-}
