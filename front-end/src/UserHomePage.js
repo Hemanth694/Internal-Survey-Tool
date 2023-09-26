@@ -1,5 +1,4 @@
 import * as React from "react";
-import TopNavigation from "@cloudscape-design/components/top-navigation";
 import Container from "@cloudscape-design/components/container";
 import Header from "@cloudscape-design/components/header";
 import ContentLayout from "@cloudscape-design/components/content-layout";
@@ -19,72 +18,15 @@ export default function UserHomePage (){
   const year = today.getFullYear();
   const date = today. getDate();
   const currentDate = year + "/" + month + "/" + date;
-  console.log(currentDate);
 
   return (
     <React.Fragment>
-    <TopNavigation
-      identity={{
-        href: "#",
-        title: "Internal Survey Tool",
-        logo: {
-          src:"https://cdn4.vectorstock.com/i/1000x1000/88/53/document-with-stamp-and-pen-business-documents-vector-31048853.jpg",
-        alt: "Service"
-        }
-      }}
-      utilities={[
-        {
-          type: "button",
-          iconName: "notification",
-          title: "Notifications",
-          ariaLabel: "Notifications (unread)",
-          badge: true,
-          disableUtilityCollapse: false
-        },
-        {
-          type: "menu-dropdown",
-          text: "Hemanth Potti",
-          description: "email@example.com",
-          iconName: "user-profile",
-          items: [
-            { id: "profile", text: "Profile" },
-            { id: "preferences", text: "Preferences" },
-            { id: "security", text: "Security" },
-            {
-              id: "support-group",
-              text: "Support",
-              items: [
-                {
-                  id: "documentation",
-                  text: "Documentation",
-                  href: "#",
-                  external: true,
-                  externalIconAriaLabel:
-                    " (opens in new tab)"
-                },
-                { id: "support", text: "Support" },
-                {
-                  id: "feedback",
-                  text: "Feedback",
-                  href: "#",
-                  external: true,
-                  externalIconAriaLabel:
-                    " (opens in new tab)"
-                }
-              ]
-            },
-            { id: "signout", text: "Sign out" }
-          ]
-        }
-      ]}
-    />
-    
     <ContentLayout
       disableOverlap
       header={
         <SpaceBetween size="m" direction="horizontal">
         <div className="parent">
-          <div className="child">
+
             <div className="popup-center-horizontal">
               <Header
                 description={false}
@@ -95,7 +37,7 @@ export default function UserHomePage (){
               </Header>;
             </div>
           </div>
-        </div>
+
         </SpaceBetween>
       }
     >
@@ -111,11 +53,6 @@ export default function UserHomePage (){
         </div>
       ))}
     </div>
-
-
     </React.Fragment>
   );
 }
-
-
-
