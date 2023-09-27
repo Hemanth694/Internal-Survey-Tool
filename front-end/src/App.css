@@ -36,15 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.parent {
-  height: 120px;
-  width: 1500px;
-  top: 15%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
