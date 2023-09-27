@@ -42,7 +42,7 @@ export default function UserHomePage () {
                     <span style={{ color: '#414d5c' }}>
                       Due: {survey.due}
                     </span>
-                    { Date.parse(survey.due) > todayDate && <Badge color="red">Overdue</Badge> }
+                    { Date.parse(survey.due) > todayDate.getTime() && <Badge color="red">Overdue</Badge> }
                   </SpaceBetween>
                 </Container>
               ))
