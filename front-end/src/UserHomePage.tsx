@@ -32,7 +32,7 @@ export default function UserHomePage () {
             <SpaceBetween size="l">
             {
               surveys.map(survey => (
-                <Container 
+                <Container key={survey.id}
                   header={
                     <Header variant="h2" 
                             actions={<Button variant="primary">Start</Button>}>
