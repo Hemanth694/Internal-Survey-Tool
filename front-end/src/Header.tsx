@@ -2,7 +2,6 @@ import TopNavigation from "@cloudscape-design/components/top-navigation";
 
 export default function Header(){
     return(
-        // eslint-disable-next-line react/react-in-jsx-scope
         <TopNavigation
             identity={{
                 href: "#",
