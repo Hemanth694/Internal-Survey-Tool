@@ -7,11 +7,12 @@ import SpaceBetween from "@cloudscape-design/components/space-between";
 import Button from "@cloudscape-design/components/button";
 import Badge from "@cloudscape-design/components/badge";
 import Box from "@cloudscape-design/components/box";
+import SurveyPage from "./SurveyPage";
 
 export default function UserHomePage () {
   const [surveys, setSurveys] = React.useState([
-    { title: "Employee survey 1", due: '2023-10-20', id:1 },
-    { title: "Employee survey 2", due: '2023-09-30', id:2 },
+    { title: "Employee survey 1", due: '2024-10-20', id:1 },
+    { title: "Employee survey 2", due: '2024-09-30', id:2 },
     { title: "Employee survey 3", due: '2023-09-12', id:3 }
   ]);
   const todayDate = new Date();
@@ -35,7 +36,7 @@ export default function UserHomePage () {
                 <Container key={survey.id}
                   header={
                     <Header variant="h2" 
-                            actions={<Button variant="primary">Start</Button>}>
+                            actions={<Button onClick={SurveyPage} variant="primary">Start</Button>}>
                       {survey.title}
                     </Header>}>
                   <SpaceBetween direction="horizontal" size="xs">
